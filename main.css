@@ -1,0 +1,31 @@
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+	background: #07132D;
+}
+
+.container {
+	width: 70%;
+	margin: auto;
+	
+	
+}
+
+.header, .footer {
+	height: 150px;
+	padding: 10px;
+	margin: 15px;
+	background: #8B96A8;
+	border: 2px solid #00ADEF;
+	border-radius: 3px;
+}
+
+.main {
+	min-height: 500px;
+}
