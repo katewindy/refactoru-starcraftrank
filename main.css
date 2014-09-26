@@ -13,6 +13,7 @@ body {
 .container {
 	width: 70%;
 	margin: auto;
+	min-width: 600px;
 	
 	
 }
@@ -29,3 +30,11 @@ body {
 .main {
 	min-height: 500px;
 }
+
+.tableholder {
+	background: #fff;
+	padding: 20px;
+	min-width: 600px;
+	border-radius: 5px;
+}
+

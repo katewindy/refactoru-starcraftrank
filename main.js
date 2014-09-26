@@ -1,7 +1,27 @@
 $(document).on('ready', function() {
-  
+	var tableData = dataPrettier();
+	createTableRows(tableData);
+	$('#datatable').DataTable({
+		"pageLength":20,
+		"lengthChange": false
+	});
 });
 
+function createTableRows (dataArray) {
+	var tableData = dataArray;
+	for (var i = 0; i < dataArray.length; i++){
+		var currentRow = dataArray[i];
+		var username = currentRow.username;
+		var fullname = currentRow.fullname;
+		var region = currentRow.region;
+		var race = currentRow.race;
+		var wins = currentRow.wins;
+		var losses = currentRow.losses;
+		var newrow = '<tr><td>'+username+'</td><td>'+fullname+'</td><td>'+region+'</td><td>'+race+'</td><td>'+wins+'</td><td>'+losses+'</td></tr>';
+
+		$('.tablebody').append(newrow);
+	};
+};
 
 
 function dataPrettier () {
